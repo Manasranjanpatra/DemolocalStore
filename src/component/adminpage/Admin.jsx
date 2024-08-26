@@ -43,9 +43,9 @@ const Admin = () => {
 
   
   return (
-    <div className="main">
-      <div className="navbar">
-        <h1>
+    <div className="maina">
+      <div className="navbarI">
+        <h1 id="ah1">
           {" "}
           Shop<span id="single-text">keeper</span>
         </h1>
@@ -76,7 +76,7 @@ const Admin = () => {
       <div className="others">
         <div className="top-bar">
           <div className="fst">
-            <h2>Dashboard</h2>
+            <h2 id="ah2">Dashboard</h2>
             <div className="searching">
               <input type="text" name="Search" placeholder="Search...."></input>
               <i className="fa-solid fa-magnifying-glass"></i>
@@ -103,7 +103,7 @@ const Admin = () => {
             </div>
             <div>
               <p id="text-color"> Ratings</p>
-              <p id="num">*</p>
+              <p id="num">*****</p>
             </div>
           </div>
           <div className="cardd">
