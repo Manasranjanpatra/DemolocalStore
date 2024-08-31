@@ -258,6 +258,9 @@ ul li:nth-child(2) i {
   font-size: 1.4rem;
   margin-top: 0.1rem;
 }
+.others{
+margin-top: 5rem;
+}
 @media (max-width: 1000px) {
   .cards {
     display: grid;

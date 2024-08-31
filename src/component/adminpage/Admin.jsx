@@ -2,6 +2,8 @@ import "./Admin.css";
 import React, { useState } from "react";
 import { Bar, Line } from "react-chartjs-2";
 import { Chart as ChartJS, defaults, plugins } from "chart.js/auto";
+import Nav from "../narbar/Nav";
+import Sitebar from "../sitebar/Sitebar";
 
 
 
@@ -16,13 +18,13 @@ defaults.plugins.title.color = "black";
 
 const Admin = () => {
 
-  const li = document.querySelectorAll(".wc-wb");
-  li.forEach((el) => {
-    el.addEventListener("click", () => {
-      document.querySelector(".active").classList.remove("active");
-      el.classList.add("active");
-    });
-  });
+  // const li = document.querySelectorAll(".wc-wb");
+  // li.forEach(el => {
+  //   el.addEventListener("click", () => {
+  //     document.querySelector(".active").classList.remove("active");
+  //     el.classList.add("active");
+  //   });
+  // });
   const [oata, setOata] = useState({
     labels: ["col1", "col2", "col3", "col4", "col5", "col6"],
     datasets: [
@@ -43,8 +45,11 @@ const Admin = () => {
 
   
   return (
-    <div className="maina">
-      <div className="navbarI">
+   <div>
+    <Nav/>
+     <div className="maina">
+      <Sitebar/>
+      {/* <div className="navbarI">
         <h1 id="ah1">
           {" "}
           Shop<span id="single-text">keeper</span>
@@ -72,7 +77,7 @@ const Admin = () => {
             </li>
           </ul>
         </div>
-      </div>
+      </div> */}
       <div className="others">
         <div className="top-bar">
           <div className="fst">
@@ -185,6 +190,7 @@ const Admin = () => {
         </div>
       </div>
     </div>
+   </div>
   );
 };
 

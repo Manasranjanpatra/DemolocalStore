@@ -4,6 +4,7 @@ import { Route, Routes } from "react-router-dom";
 import Login from "./login/Login";
 import Redg from "./register/Redg";
 import Admin from "./adminpage/Admin";
+import Updateproduct from "./ProductUpdate/Updateproduct";
 const Router = () => {
   return (
     <>
@@ -12,6 +13,7 @@ const Router = () => {
         <Route path="/shoping/signin" element={<Login />} />
         <Route path="/shoping/signup" element={<Redg />} />
         <Route path="/shoping/dashboard" element={<Admin />} />
+        <Route path="/shoping/update" element={<Updateproduct />} />
       </Routes>
     </>
   );
