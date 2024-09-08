@@ -48,8 +48,8 @@ const Admin = () => {
    <div>
     <Nav/>
      <div className="maina">
-      <Sitebar/>
-      {/* <div className="navbarI">
+    
+      <div className="navbarI">
         <h1 id="ah1">
           {" "}
           Shop<span id="single-text">keeper</span>
@@ -77,7 +77,7 @@ const Admin = () => {
             </li>
           </ul>
         </div>
-      </div> */}
+      </div>
       <div className="others">
         <div className="top-bar">
           <div className="fst">

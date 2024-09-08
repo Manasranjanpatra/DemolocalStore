@@ -7,7 +7,7 @@
 .backbut{
   position: fixed;
   font-size: 2rem;
-  margin-top:5rem ;
+  /* margin-top:1rem ; */
   margin-left: 1rem;
 }
 .mainpu {
@@ -20,7 +20,7 @@
   background-color: rgb(226, 229, 232);
 }
 .fm {
-  width: 63%;
+  width: 55%;
   margin-top: 5.8rem;
   /* border: 2px solid black; */
   height: 100%;
@@ -123,23 +123,27 @@
 }
 .sl {
   height: 100%;
-  width: 37%;
-margin-top: 7.7rem;
+  width: 30%;
+margin-top: 9.2rem;
   height: 100%;
   padding: 1.2rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
+  gap:2rem;
 }
 .sl .img {
-  padding: 0.5rem;
+  padding: 0.7rem;
   border: 2px dashed rgb(198, 194, 194);
   display: flex;
-  justify-content: center;
-  align-items: end;
+  justify-content: space-between;
+
+  align-items: center;
+  flex-direction: column;
+  /* align-items: end; */
   color: blue;
-  height: 12rem;
+  height: 13rem;
 }
 .sl .img button {
   padding: 0.8rem 1.2rem;
@@ -232,4 +236,38 @@ input[type="checkbox"] {
 }
 .btg{
   padding-bottom: rem;
+}
+#inputimg{
+  display: none;
+}
+#realimg1{
+
+  border-radius: 50%;
+  height:5.9rem;
+  width:5.9rem;
+
+  object-fit: cover;
+  object-position: center;
+  border: 2px solid rgb(248, 96, 8);
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+#realimg2{
+  position: absolute;
+  border-radius: 50%;
+  height:5.9rem;
+  width:5.9rem;
+
+  object-fit: cover;
+  object-position: center;
+  border: 2px solid rgb(248, 96, 8);
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+.fa-arrow-up-from-bracket{
+  font-size: 2rem;
+  color: white;
+  background-color: #0b37c9e0;
 }
